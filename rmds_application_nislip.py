@@ -26,7 +26,7 @@ if tabs == "EDA":
     col4.metric("test", 900, delta = -5)
     
     # Graphing
-    c = alt.Chart(df).mark_circle(size = 30).encode(x = 'Date', y = 'Close', color = 'Morningstar Category').interactive()
+    c = alt.Chart(df).mark_circle(size = 30).encode(x = 'Date:T', y = 'Close', color = 'Morningstar Category').interactive()
     st.altair_chart(c)
     
 # Forecast and Portfolio Performance
