@@ -25,9 +25,8 @@ if tabs == "EDA":
     col4.metric("test", 900, delta = -5)
     
     # Graphing
-    c = alt.Chart(investor_data, mark = 'point').encode(x = 'close', y = 'date')
-    st.altair_chart(c, use_container_width = True)
-    
+    c = alt.Chart(investor_data).mark_circle(size = 30).encode(x = 'Date', y = 'Close', color = 'Morningstar Category').interactive()
+    st.altair_chart(c, use_container_width=True)
     
 # Forecast and Portfolio Performance
 if tabs == "Forecast and Portfolio Performance":
