@@ -15,10 +15,10 @@ if tabs == "EDA":
     st.subheader("Portfolio Overview")
     
     col1, col2, col3, col4 = st.columns(4) 
-    col1.metric("Most valued Stock", 70)
-    col2.metric("Least valued Stock", 80)
-    col3.metric("test", 100)
-    col4.metric("test", 900)
+    col1.metric("Most valued Stock", 70, delta = 1)
+    col2.metric("Least valued Stock", 80, delta = -4)
+    col3.metric("test", 100, delta = 10)
+    col4.metric("test", 900, delta = -5)
     
 if tabs == "Forecast and Portfolio Performance":
     
