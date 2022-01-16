@@ -9,7 +9,8 @@ tabs = st.sidebar.selectbox("Portfolio Phase: ", ["EDA", "Forecast and Portfolio
 
 if tabs == "EDA":
     
-    st.write("YEET")
+    st.subheader("Upload your Portfolio data: ")
+    investor_data = st.file_uploader('Upload a CSV file')
     
 if tabs == "Forecast and Portfolio Performance":
     
