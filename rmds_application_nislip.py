@@ -26,7 +26,14 @@ if tabs == "EDA":
     col4.metric("test", 900, delta = -5)
     
     # Graphing
-    st.line_chart(df)
+    selection = alt.selection_multi(fields = ['Morningstar Category'], bind = 'legend')
+
+    test = alt.Chart(test).mark_area().encode(
+        alt.X('Date:T', axis = alt.Axis(domain=False, format = '%Y-%m-%d')), 
+        alt.Y('Open:Q'), 
+        alt.Color('Morningstar Category:N')).add_selection(selection)
+    
+    st.altair_chart(test)
     
 # Forecast and Portfolio Performance
 if tabs == "Forecast and Portfolio Performance":
