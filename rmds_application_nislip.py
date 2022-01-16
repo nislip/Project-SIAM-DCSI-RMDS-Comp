@@ -5,11 +5,12 @@ import streamlit as st
 
 st.title("RMDS Competiion")
 
-add_selectbox = st.sidebar.selectbox(
-    "Select Competition Phase",
-    ("Introduction", "EDA", "Modeling")
-)
+tabs = st.sidebar.radio("Portfolio Phase: ", ["EDA", "Forecast and Portfolio Performance"])
 
-if st.sidebar.selectbox('Select Competition Phase',['Introduction']) == 'Introduction':
+if tabs = "EDA":
     
-    st.write('test')
+    st.write("YEET")
+    
+if tabs = "Portfolio Performance":
+    
+    st.write("I am inevitable")
