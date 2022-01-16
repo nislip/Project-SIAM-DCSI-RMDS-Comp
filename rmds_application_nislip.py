@@ -16,9 +16,9 @@ if tabs == "EDA":
     
     col1, col2, col3, col4 = st.columns(4) 
     col1.metric("Most valued Stock", 70)
-    col1.metric("Least valued Stock", 80)
-    col1.metric("test", 100)
-    col1.metric("test", 900)
+    col2.metric("Least valued Stock", 80)
+    col3.metric("test", 100)
+    col4.metric("test", 900)
     
 if tabs == "Forecast and Portfolio Performance":
     
