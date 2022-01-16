@@ -26,6 +26,7 @@ if tabs == "EDA":
     
     # Graphing
     c = alt.Chart(investor_data, mark = 'point')
+    st.altair_chart(c, use_container_width = True)
     
     
 # Forecast and Portfolio Performance
