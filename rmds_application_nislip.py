@@ -25,7 +25,7 @@ if tabs == "EDA":
     col4.metric("test", 900, delta = -5)
     
     # Graphing
-    c = alt.Chart(investor_data, mark = 'point')
+    c = alt.Chart(investor_data, mark = 'point').encode(x = 'close', y = 'date')
     st.altair_chart(c, use_container_width = True)
     
     
