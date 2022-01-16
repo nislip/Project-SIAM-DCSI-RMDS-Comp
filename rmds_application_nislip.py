@@ -28,7 +28,7 @@ if tabs == "EDA":
     # Graphing
     selection = alt.selection_multi(fields = ['Morningstar Category'], bind = 'legend')
 
-    test = alt.Chart(test).mark_area().encode(
+    test = alt.Chart(df).mark_area().encode(
         alt.X('Date:T', axis = alt.Axis(domain=False, format = '%Y-%m-%d')), 
         alt.Y('Open:Q'), 
         alt.Color('Morningstar Category:N')).add_selection(selection)
