@@ -14,11 +14,7 @@ if tabs == "EDA":
     investor_data = st.file_uploader('Upload a CSV file')
     
     # Portfolio Overview
-    '''
-    Metrics: Key Performance Indicators for investor portfolio 
-    Vizualizations:
-            (1) Limit the size of the data to maybe 2000 rows/observations
-    '''
+
     st.subheader("Portfolio Overview")
     
     # Key Performance Indicators
@@ -27,6 +23,10 @@ if tabs == "EDA":
     col2.metric("Least valued Stock", 80, delta = -4)
     col3.metric("test", 100, delta = 10)
     col4.metric("test", 900, delta = -5)
+    
+    # Graphing
+    c = alt.Chart(investor_data, mark = 'point')
+    
     
 # Forecast and Portfolio Performance
 if tabs == "Forecast and Portfolio Performance":
