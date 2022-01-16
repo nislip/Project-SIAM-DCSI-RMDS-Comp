@@ -7,10 +7,10 @@ st.title("RMDS Competiion")
 
 tabs = st.sidebar.radio("Portfolio Phase: ", ["EDA", "Forecast and Portfolio Performance"])
 
-if tabs = "EDA":
+if tabs == "EDA":
     
     st.write("YEET")
     
-if tabs = "Portfolio Performance":
+if tabs == "Portfolio Performance":
     
     st.write("I am inevitable")
