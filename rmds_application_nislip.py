@@ -18,6 +18,14 @@ if tabs == "EDA":
 
     st.subheader("Portfolio Overview")
     
+    st.write("Input: Input tickers")
+    st.write("Output: View tickers (names) (1 visual)")
+    st.write("Input: Ticker(s) to view Price Per day (searchable drop down) ")
+    st.write("Output: Graph of Tickers (1 graph)")
+    st.write("Output: Grab list of tickers selected for timeseries. Display key column values for ticker i pause t seconds")
+    
+    
+    
     # Key Performance Indicators
     col1, col2, col3, col4 = st.columns(4) 
     col1.metric("Most valued Stock", 70, delta = 1)
