@@ -20,7 +20,7 @@ if tabs == "EDA":
     
     st.write("Input: Input tickers")
     
-    list_of_ticks = st.multiselect(label = 'Select the tickers you are using in the portfolio', options = df['Ticker'].drop_duplicates())
+    list_of_ticks = st.multiselect(label = 'Select the tickers you are using in the portfolio')
     st.write(list_of_ticks)
     
     st.write("Output: View tickers (names) (1 visual)")
