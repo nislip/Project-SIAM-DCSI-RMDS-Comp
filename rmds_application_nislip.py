@@ -6,13 +6,15 @@ import streamlit as st
 st.title("RMDS Competiion")
 
 tabs = st.sidebar.selectbox("Portfolio Phase: ", ["EDA", "Forecast and Portfolio Performance", "Appendix"])
+df = pd.read_csv('funds.csv')
+
 
 # Exploratory Data Analysis
 if tabs == "EDA":
     
     st.subheader("Upload your Portfolio data: ")
-    investor_data = st.file_uploader('Upload a CSV file')
-    df = pd.DataFrame(data = investor_data)
+    #investor_data = st.file_uploader('Upload a CSV file')
+    #df = pd.DataFrame(data = investor_data)
     
     # Portfolio Overview
 
