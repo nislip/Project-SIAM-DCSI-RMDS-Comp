@@ -12,19 +12,12 @@ df = pd.read_csv('funds.csv')
 # Exploratory Data Analysis
 if tabs == "EDA":
     
-    st.subheader("Upload your Portfolio data: ")
-    #investor_data = st.file_uploader('Upload a CSV file')
-    #df = pd.DataFrame(data = investor_data)
-    
     # Portfolio Overview
 
     st.subheader("Portfolio Overview")
     
-    st.write("Input: Input tickers")
-    
-    test = st.multiselect('What are your favorite colors', list(df['Ticker']))
-    
-    
+    test = st.multiselect('Select a subset of tickers in your Portfolio', list(df['Ticker']))
+ 
     st.write("Output: View tickers (names) (1 visual)")
     st.write("Input: Ticker(s) to view Price Per day (searchable drop down) ")
     st.write("Output: Graph of Tickers (1 graph)")
