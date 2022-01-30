@@ -20,7 +20,8 @@ if tabs == "EDA":
     
     st.write("Input: Input tickers")
     
-    st.text_input(label = 'test')
+    list_of_ticks = st.text_input(label = 'test')
+    st.write(list_of_ticks)
     
     st.write("Output: View tickers (names) (1 visual)")
     st.write("Input: Ticker(s) to view Price Per day (searchable drop down) ")
