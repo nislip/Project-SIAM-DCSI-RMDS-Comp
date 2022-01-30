@@ -8,6 +8,15 @@ st.title("RMDS Competiion")
 tabs = st.sidebar.selectbox("Portfolio Phase: ", ["EDA", "Forecast and Portfolio Performance", "Appendix"])
 df = pd.read_csv('funds.csv')
 
+prices_1 = pd.read_csv('prices_1.csv')
+prices_2 = pd.read_csv('prices_2.csv')
+prices_3 = pd.read_csv('prices_3.csv')
+prices_4 = pd.read_csv('prices_4.csv')
+prices_5 = pd.read_csv('prices_5.csv')
+prices_6 = pd.read_csv('prices_6.csv')
+
+prices_per_day = pd.concat([prices_1, prices_2, prices_3, prices_4, prices_5, prices_6], axis=0)
+
 
 # Exploratory Data Analysis
 if tabs == "EDA":
