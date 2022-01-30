@@ -19,6 +19,9 @@ if tabs == "EDA":
     st.subheader("Portfolio Overview")
     
     st.write("Input: Input tickers")
+    
+    st.text_input(label = 'test')
+    
     st.write("Output: View tickers (names) (1 visual)")
     st.write("Input: Ticker(s) to view Price Per day (searchable drop down) ")
     st.write("Output: Graph of Tickers (1 graph)")
