@@ -20,10 +20,7 @@ if tabs == "EDA":
     
     st.write("Input: Input tickers")
     
-    test = st.multiselect(
-         'What are your favorite colors',
-         ['Green', 'Yellow', 'Red', 'Blue'],
-         ['Yellow', 'Red'])
+    test = st.multiselect('What are your favorite colors', list(df['Ticker']))
     
     
     st.write("Output: View tickers (names) (1 visual)")
